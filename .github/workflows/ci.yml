@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+# A new push to a PR makes the previous run irrelevant, so cancel it rather
+# than paying for both.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: lint and test
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v5
+
+      # pnpm must be installed before setup-node, because setup-node's pnpm
+      # cache resolution shells out to pnpm to find the store path.
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        # Version comes from package.json's packageManager field.
+
+      - name: Install Node
+        uses: actions/setup-node@v6
+        with:
+          # Kept in step with .tool-versions, which pins the local toolchain.
+          node-version-file: .tool-versions
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # `eslint src && tsc`. The typecheck is the important half: Remotion's
+      # bundler strips types without checking them, so a green render proves
+      # nothing about types.
+      - name: Lint and typecheck
+        run: pnpm lint
+
+      - name: Test
+        run: pnpm test
+
+      # Cheap guard on the architectural invariant the pose editor depends on:
+      # the maths and drawing library must not pull in Remotion, or it stops
+      # being usable outside the video renderer.
+      - name: Check the library has no Remotion dependency
+        run: |
+          if grep -rl '"remotion"' src/lib; then
+            echo "::error::src/lib must not import remotion — see CONTRIBUTING notes in README.md"
+            exit 1
+          fi
+          echo "src/lib is free of Remotion imports"
