@@ -103,6 +103,40 @@ steps must then *differ*, proving the linework is animating. Both must hold.
 `tsc` does not gate rendering: Remotion's bundler strips types without checking
 them, so a green render proves nothing about types. Run the typecheck.
 
+## Contributing
+
+This is a personal project for learning animation by building it, so it is
+opinionated and moves in whatever direction is interesting. Issues and pull
+requests are welcome; please open an issue before anything large, so you don't
+spend an afternoon on something that doesn't fit.
+
+Before submitting:
+
+```bash
+pnpm lint    # eslint + tsc
+pnpm test    # 79 unit tests
+```
+
+Four things specific to this codebase, all of which are easy to break without
+noticing:
+
+- **Keep the pure modules pure.** Nothing under `src/lib/figure/`,
+  `src/lib/anim/` or `src/lib/poses/` may import React, Remotion or roughjs.
+  That constraint is what lets the maths be tested without a browser and the
+  pose editor reuse the renderer's code. Check with
+  `grep -rl '"remotion"' src/lib` — it should print nothing.
+- **Run the determinism check if you touch rendering.** Render the same still
+  twice and compare hashes; identical means the roughjs seeds are controlled.
+  Then confirm two frames in different boil steps *differ*. Both must hold, and
+  neither is covered by the unit tests.
+- **Pose data belongs in `poses/` as JSON**, not in TypeScript. It is edited by
+  a tool as well as by hand.
+- **Read the gotchas in `CLAUDE.md`** before debugging anything odd. Most of
+  them cost someone an hour to find and are silently wrong if guessed.
+
+Tests are expected for logic; prefer asserting a property (a limb keeps its
+length, an IK solve reaches its target) over asserting a specific number.
+
 ## Notes
 
 `CLAUDE.md` documents the architecture and, more usefully, the decisions and
