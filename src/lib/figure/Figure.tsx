@@ -421,7 +421,7 @@ export const Figure: React.FC<FigureProps> = ({
       : [];
 
     return [...limbs, ...arms, ...lotus, ...head];
-  }, [pose, root, scale, frame, ink, strokeWidth, roughness, seedOffset, curvedLimbs, limbRounding, limbStyle, limbWidth, paper, loopLegs, lotusLegs, linkedArms, headScale, skeleton, torsoBottomExtend]);
+  }, [pose, root, scale, frame, ink, strokeWidth, roughness, seedOffset, curvedLimbs, limbRounding, limbStyle, limbWidth, paper, loopLegs, lotusLegs, linkedArms, headScale, skeleton, torsoBottomExtend, neckGap]);
 
   return <RoughPaths paths={paths} />;
 };

@@ -117,7 +117,8 @@ export const roughPathsFor = (shape: ShapeDescriptor, options: RoughOptions): Pa
  */
 export const useRoughPaths = (shape: ShapeDescriptor, options: RoughOptions): PathInfo[] => {
   const key = JSON.stringify([shape, options]);
-  // eslint-disable-next-line react-hooks/exhaustive-deps -- key is a content
-  // hash of both shape and options, which is the correct dependency here.
+  // `key` is a content hash of both shape and options, so it is the correct
+  // dependency; listing the objects themselves would defeat the memo entirely.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   return useMemo(() => roughPathsFor(shape, options), [key]);
 };

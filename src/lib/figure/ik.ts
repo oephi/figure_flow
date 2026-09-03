@@ -93,7 +93,7 @@ export interface TwoBoneIkInput<Name extends string> {
   readonly bend: Bend;
 }
 
-export interface TwoBoneIkResult<Name extends string> {
+export interface TwoBoneIkResult {
   /** Pose angle (degrees, relative to restAngle) to assign to `upper`. */
   readonly upper: number;
   /** Pose angle (degrees, relative to restAngle) to assign to `lower`. */
@@ -128,7 +128,7 @@ export interface TwoBoneIkResult<Name extends string> {
  */
 export function solveTwoBoneIk<Name extends string>(
   input: TwoBoneIkInput<Name>,
-): TwoBoneIkResult<Name> {
+): TwoBoneIkResult {
   const { skeleton, pose, root, upper, lower, target, bend } = input;
 
   const byName = new Map(skeleton.map((bone) => [bone.name, bone]));
