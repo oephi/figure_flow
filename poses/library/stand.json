@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "name": "stand",
+  "description": "Standing still in profile, slightly asymmetric so the near and far limbs read separately.",
+  "pose": {
+    "leftThigh": 3,
+    "leftShin": -4,
+    "rightThigh": -3,
+    "rightShin": -3,
+    "leftUpperArm": -6,
+    "leftForearm": -10,
+    "rightUpperArm": 6,
+    "rightForearm": -12,
+    "spine": -2
+  }
+}

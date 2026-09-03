@@ -6,9 +6,9 @@
  */
 
 import { Config } from "@remotion/cli/config";
-import { enableTailwind } from '@remotion/tailwind-v4';
 
 Config.setRspack(true);
-Config.setVideoImageFormat("jpeg");
+// PNG rather than the default JPEG: line art on flat backgrounds shows JPEG
+// ringing artefacts around every stroke.
+Config.setVideoImageFormat("png");
 Config.setOverwriteOutput(true);
-Config.overrideBundlerConfig(enableTailwind);

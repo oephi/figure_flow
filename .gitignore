@@ -1,7 +1,31 @@
+# ---- dependencies -------------------------------------------------------
 node_modules
-dist
-.DS_Store
-.env
 
-# Ignore the output video from Git but not videos you import into src/.
+# ---- build output -------------------------------------------------------
+dist
+editor/dist/
+*.tsbuildinfo
+
+# Rendered videos and stills. Ignores the OUTPUT of a render, not media you
+# import into src/.
 out
+
+# ---- large, machine-specific, restorable --------------------------------
+# whisper.cpp checkout, its compiled native binary and the downloaded ggml
+# model (~1.5GB for medium.en). Restored on demand by scripts/transcribe.ts.
+whisper.cpp/
+
+# Vendored Remotion agent skills. Restore with `npx skills add remotion-dev/skills`
+# — skills-lock.json IS committed, so this is the same deal as node_modules and
+# its lockfile.
+.agents/skills/
+
+# Symlinks into .agents/skills, created by the skills installer. Machine-local.
+.claude/
+
+# ---- environment / editor cruft -----------------------------------------
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log

@@ -1,33 +1,45 @@
 {
-  "name": ".scaffold",
+  "name": "animation-pipeline",
   "version": "1.0.0",
-  "description": "My Remotion video",
-  "repository": {},
+  "description": "Hand-drawn 2D animated videos, authored as code",
   "license": "UNLICENSED",
   "private": true,
+  "packageManager": "pnpm@11.1.1",
   "dependencies": {
+    "@remotion/captions": "4.0.520",
     "@remotion/cli": "4.0.520",
+    "@remotion/install-whisper-cpp": "4.0.520",
+    "@remotion/zod-types": "4.0.520",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.520",
-    "@remotion/tailwind-v4": "4.0.520",
-    "tailwindcss": "4.0.0"
+    "roughjs": "4.6.6",
+    "zod": "4.4.3"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.520",
     "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.5",
     "@types/web": "0.0.166",
+    "@vitejs/plugin-react": "^5.2.0",
     "eslint": "9.19.0",
+    "playwright-core": "^1.62.1",
     "prettier": "3.8.1",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "vite": "^7.3.6",
+    "vitest": "3.2.4"
   },
   "scripts": {
     "dev": "remotion studio",
     "build": "remotion bundle",
+    "render": "remotion render",
+    "test": "vitest run",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
-  },
-  "sideEffects": [
-    "*.css"
-  ]
+    "lint": "eslint src && tsc",
+    "tts": "node scripts/tts.ts",
+    "transcribe": "node scripts/transcribe.ts",
+    "editor": "node server/dev.mjs",
+    "editor:web": "vite",
+    "editor:api": "node server/save-poses.mjs"
+  }
 }

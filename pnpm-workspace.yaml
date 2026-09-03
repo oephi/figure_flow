@@ -1,0 +1,8 @@
+# pnpm 11 reads settings from here, not from package.json's "pnpm" field, and uses
+# `allowBuilds` (a map) rather than pnpm 10's `onlyBuiltDependencies` list.
+#
+# esbuild arrives as a transitive dependency of Remotion's bundler and needs its
+# postinstall to run. Left unapproved, pnpm's deps-status check fails on every
+# `pnpm exec` / `pnpm run` with ERR_PNPM_IGNORED_BUILDS.
+allowBuilds:
+  esbuild: true

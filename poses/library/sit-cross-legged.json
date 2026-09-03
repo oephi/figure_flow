@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "name": "sit-cross-legged",
+  "description": "Front-on lotus. The crossed legs themselves are a drawn motif (see Figure's lotusLegs), so only the torso, arms and head come from this pose.",
+  "pose": {
+    "spine": 0,
+    "neck": 0,
+    "head": 0,
+    "leftUpperArm": -27.101817149569,
+    "leftForearm": -25.470044508618344,
+    "rightUpperArm": 27.597738208118244,
+    "rightForearm": 14.904318291455127,
+    "leftThigh": -60.12992657581924,
+    "leftShin": 171.6270604026729,
+    "leftFoot": 100.96837595158655,
+    "rightThigh": 58.205215626478434,
+    "rightShin": -170,
+    "rightFoot": 78.19157443459483
+  }
+}

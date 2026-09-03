@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "name": "walk",
+  "description": "Profile walk cycle facing screen-right. Authored as four poses (contact, down, passing, up) with the second step mirrored; materialised here so the editor can load it.",
+  "fps": 30,
+  "durationInFrames": 24,
+  "keyframes": [
+    {
+      "frame": 0,
+      "label": "contact",
+      "pose": {
+        "rightThigh": -22,
+        "rightShin": 8,
+        "rightFoot": -10,
+        "leftThigh": 20,
+        "leftShin": -28,
+        "leftFoot": 18,
+        "rightUpperArm": 22,
+        "rightForearm": -25,
+        "leftUpperArm": -22,
+        "leftForearm": -30,
+        "spine": -3
+      }
+    },
+    {
+      "frame": 3,
+      "label": "down",
+      "pose": {
+        "rightThigh": -12,
+        "rightShin": -14,
+        "rightFoot": 4,
+        "leftThigh": 26,
+        "leftShin": -34,
+        "leftFoot": 24,
+        "rightUpperArm": 14,
+        "rightForearm": -20,
+        "leftUpperArm": -14,
+        "leftForearm": -26,
+        "spine": -4
+      }
+    },
+    {
+      "frame": 6,
+      "label": "passing",
+      "pose": {
+        "rightThigh": 2,
+        "rightShin": -6,
+        "rightFoot": 0,
+        "leftThigh": -6,
+        "leftShin": -48,
+        "leftFoot": 10,
+        "rightUpperArm": 4,
+        "rightForearm": -14,
+        "leftUpperArm": -4,
+        "leftForearm": -18,
+        "spine": -3
+      }
+    },
+    {
+      "frame": 9,
+      "label": "up",
+      "pose": {
+        "rightThigh": 14,
+        "rightShin": -8,
+        "rightFoot": -16,
+        "leftThigh": -18,
+        "leftShin": -22,
+        "leftFoot": 6,
+        "rightUpperArm": -8,
+        "rightForearm": -16,
+        "leftUpperArm": 8,
+        "leftForearm": -22,
+        "spine": -3
+      }
+    },
+    {
+      "frame": 12,
+      "label": "contact-mirrored",
+      "pose": {
+        "leftThigh": -22,
+        "leftShin": 8,
+        "leftFoot": -10,
+        "rightThigh": 20,
+        "rightShin": -28,
+        "rightFoot": 18,
+        "leftUpperArm": 22,
+        "leftForearm": -25,
+        "rightUpperArm": -22,
+        "rightForearm": -30,
+        "spine": -3
+      }
+    },
+    {
+      "frame": 15,
+      "label": "down-mirrored",
+      "pose": {
+        "leftThigh": -12,
+        "leftShin": -14,
+        "leftFoot": 4,
+        "rightThigh": 26,
+        "rightShin": -34,
+        "rightFoot": 24,
+        "leftUpperArm": 14,
+        "leftForearm": -20,
+        "rightUpperArm": -14,
+        "rightForearm": -26,
+        "spine": -4
+      }
+    },
+    {
+      "frame": 18,
+      "label": "passing-mirrored",
+      "pose": {
+        "leftThigh": 2,
+        "leftShin": -6,
+        "leftFoot": 0,
+        "rightThigh": -6,
+        "rightShin": -48,
+        "rightFoot": 10,
+        "leftUpperArm": 4,
+        "leftForearm": -14,
+        "rightUpperArm": -4,
+        "rightForearm": -18,
+        "spine": -3
+      }
+    },
+    {
+      "frame": 21,
+      "label": "up-mirrored",
+      "pose": {
+        "leftThigh": 14,
+        "leftShin": -8,
+        "leftFoot": -16,
+        "rightThigh": -18,
+        "rightShin": -22,
+        "rightFoot": 6,
+        "leftUpperArm": -8,
+        "leftForearm": -16,
+        "rightUpperArm": 8,
+        "rightForearm": -22,
+        "spine": -3
+      }
+    },
+    {
+      "frame": 24,
+      "label": "contact",
+      "pose": {
+        "rightThigh": -22,
+        "rightShin": 8,
+        "rightFoot": -10,
+        "leftThigh": 20,
+        "leftShin": -28,
+        "leftFoot": 18,
+        "rightUpperArm": 22,
+        "rightForearm": -25,
+        "leftUpperArm": -22,
+        "leftForearm": -30,
+        "spine": -3
+      }
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "captions": [
+    {
+      "text": "The",
+      "startMs": 60,
+      "endMs": 240,
+      "timestampMs": 200,
+      "confidence": 0.764431
+    },
+    {
+      "text": " figure",
+      "startMs": 240,
+      "endMs": 610,
+      "timestampMs": 400,
+      "confidence": 0.982139
+    },
+    {
+      "text": " walks",
+      "startMs": 610,
+      "endMs": 950,
+      "timestampMs": 760,
+      "confidence": 0.998917
+    },
+    {
+      "text": " in",
+      "startMs": 950,
+      "endMs": 1080,
+      "timestampMs": 980,
+      "confidence": 0.998186
+    },
+    {
+      "text": " from",
+      "startMs": 1080,
+      "endMs": 1350,
+      "timestampMs": 1180,
+      "confidence": 0.996451
+    },
+    {
+      "text": " the",
+      "startMs": 1350,
+      "endMs": 1550,
+      "timestampMs": 1340,
+      "confidence": 0.998708
+    },
+    {
+      "text": " edge",
+      "startMs": 1550,
+      "endMs": 1820,
+      "timestampMs": 1480,
+      "confidence": 0.999355
+    },
+    {
+      "text": " of",
+      "startMs": 1820,
+      "endMs": 1950,
+      "timestampMs": 1640,
+      "confidence": 0.997107
+    },
+    {
+      "text": " the",
+      "startMs": 1950,
+      "endMs": 2140,
+      "timestampMs": 1780,
+      "confidence": 0.99729
+    },
+    {
+      "text": " frame",
+      "startMs": 2140,
+      "endMs": 2600,
+      "timestampMs": 2100,
+      "confidence": 0.997712
+    },
+    {
+      "text": ".",
+      "startMs": 2600,
+      "endMs": 2600,
+      "timestampMs": 2700,
+      "confidence": 0.819629
+    },
+    {
+      "text": " It",
+      "startMs": 2600,
+      "endMs": 2880,
+      "timestampMs": 2780,
+      "confidence": 0.998418
+    },
+    {
+      "text": " stops",
+      "startMs": 2880,
+      "endMs": 3590,
+      "timestampMs": 3220,
+      "confidence": 0.998944
+    },
+    {
+      "text": " and",
+      "startMs": 3590,
+      "endMs": 3840,
+      "timestampMs": 3740,
+      "confidence": 0.36566
+    },
+    {
+      "text": " for",
+      "startMs": 3840,
+      "endMs": 4080,
+      "timestampMs": 3900,
+      "confidence": 0.894372
+    },
+    {
+      "text": " a",
+      "startMs": 4080,
+      "endMs": 4160,
+      "timestampMs": 4080,
+      "confidence": 0.997691
+    },
+    {
+      "text": " moment",
+      "startMs": 4160,
+      "endMs": 4650,
+      "timestampMs": 4300,
+      "confidence": 0.999512
+    },
+    {
+      "text": " nothing",
+      "startMs": 4650,
+      "endMs": 5240,
+      "timestampMs": 4680,
+      "confidence": 0.755375
+    },
+    {
+      "text": " moves",
+      "startMs": 5240,
+      "endMs": 5680,
+      "timestampMs": 5160,
+      "confidence": 0.997843
+    },
+    {
+      "text": ".",
+      "startMs": 5680,
+      "endMs": 5680,
+      "timestampMs": 5700,
+      "confidence": 0.878848
+    },
+    {
+      "text": " Then",
+      "startMs": 5680,
+      "endMs": 5930,
+      "timestampMs": 5860,
+      "confidence": 0.997185
+    },
+    {
+      "text": " it",
+      "startMs": 5930,
+      "endMs": 6050,
+      "timestampMs": 6080,
+      "confidence": 0.982673
+    },
+    {
+      "text": " settles",
+      "startMs": 6050,
+      "endMs": 6480,
+      "timestampMs": 6300,
+      "confidence": 0.997493
+    },
+    {
+      "text": " down",
+      "startMs": 6480,
+      "endMs": 6760,
+      "timestampMs": 6680,
+      "confidence": 0.998784
+    },
+    {
+      "text": " and",
+      "startMs": 6760,
+      "endMs": 7140,
+      "timestampMs": 6940,
+      "confidence": 0.951295
+    },
+    {
+      "text": " sits",
+      "startMs": 7140,
+      "endMs": 7600,
+      "timestampMs": 7340,
+      "confidence": 0.995091
+    },
+    {
+      "text": " cross",
+      "startMs": 7600,
+      "endMs": 7930,
+      "timestampMs": 7880,
+      "confidence": 0.604467
+    },
+    {
+      "text": " le",
+      "startMs": 7930,
+      "endMs": 8320,
+      "timestampMs": 8160,
+      "confidence": 0.511703
+    },
+    {
+      "text": "gged",
+      "startMs": 8320,
+      "endMs": 8520,
+      "timestampMs": 8340,
+      "confidence": 0.999853
+    },
+    {
+      "text": " facing",
+      "startMs": 8520,
+      "endMs": 8880,
+      "timestampMs": 8780,
+      "confidence": 0.707798
+    },
+    {
+      "text": " the",
+      "startMs": 8880,
+      "endMs": 9300,
+      "timestampMs": 9000,
+      "confidence": 0.992252
+    },
+    {
+      "text": " water",
+      "startMs": 9300,
+      "endMs": 9500,
+      "timestampMs": 9280,
+      "confidence": 0.999022
+    },
+    {
+      "text": ".",
+      "startMs": 9500,
+      "endMs": 9540,
+      "timestampMs": 9380,
+      "confidence": 0.988112
+    }
+  ]
+}

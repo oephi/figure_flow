@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "name": "crouch",
+  "description": "Folded onto the ground in profile: thighs forward, shins tucked back underneath.",
+  "pose": {
+    "leftThigh": -60,
+    "leftShin": 130,
+    "leftFoot": -20,
+    "rightThigh": -64,
+    "rightShin": 134,
+    "rightFoot": -18,
+    "leftUpperArm": 10,
+    "leftForearm": -50,
+    "rightUpperArm": -10,
+    "rightForearm": -46,
+    "spine": -6
+  }
+}
