@@ -137,6 +137,12 @@ noticing:
 Tests are expected for logic; prefer asserting a property (a limb keeps its
 length, an IK solve reaches its target) over asserting a specific number.
 
+## Licence
+
+MIT — see [LICENSE](LICENSE). Contributions are accepted under the same terms.
+
+Remotion is free for individuals including commercial use; roughjs is MIT.
+
 ## Notes
 
 `CLAUDE.md` documents the architecture and, more usefully, the decisions and
@@ -145,5 +151,4 @@ rather than a pose, why rough.js seeds must be ≥ 1, and why the figure is scal
 by its geometry rather than by an SVG transform.
 
 whisper.cpp and its model (~1.4 GB) are downloaded on first transcribe and are
-not in the repo. Remotion is free for individuals, including commercial use;
-roughjs is MIT.
+not in the repo.

@@ -1,9 +1,8 @@
 {
   "name": "animation-pipeline",
   "version": "1.0.0",
-  "description": "Hand-drawn 2D animated videos, authored as code",
-  "license": "UNLICENSED",
-  "private": true,
+  "description": "Short narrated videos in a hand-drawn style, authored as code. Remotion + roughjs, with a browser pose editor.",
+  "license": "MIT",
   "packageManager": "pnpm@11.1.1",
   "dependencies": {
     "@remotion/captions": "4.0.520",
@@ -41,5 +40,9 @@
     "editor": "node server/dev.mjs",
     "editor:web": "vite",
     "editor:api": "node server/save-poses.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/oephi/figure_flow.git"
   }
 }
